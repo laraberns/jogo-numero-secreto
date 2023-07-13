@@ -2,7 +2,7 @@
 function verificarSeOChutePossuiValorValido(chute) {
     
     //imprime tela de game over se for falado as palavras "game over"
-    if(chute === 'game over') {
+    if(chute === 'game over' || chute === 'Game over' || chute === 'Game Over.') {
         document.body.innerHTML = `
         <h2>GAME OVER</h2>
         <h3>O número secreto era ${numeroSecreto}</h3>
