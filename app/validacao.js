@@ -1,5 +1,16 @@
 
 function verificarSeOChutePossuiValorValido(chute) {
+    
+    //imprime tela de game over se for falado as palavras "game over"
+    if(chute === 'game over') {
+        document.body.innerHTML = `
+        <h2>GAME OVER</h2>
+        <h3>O número secreto era ${numeroSecreto}</h3>
+        <button id= "jogar-novamente" class="btn-jogar">Jogar novamente</button>
+        `
+        document.body.style.backgroundColor = "#EC3232"
+    }
+    
     //converte numero em inteiro
     const numero = +chute
 
@@ -28,6 +39,7 @@ function verificarSeOChutePossuiValorValido(chute) {
     } else {
         elementoChute.innerHTML += `<div> O número secreto é maior <i class="fa-solid fa-arrow-up" style="color: #ffffff;"></i></i> </div>`
     }
+
 }
 
 //funcao para verificar se valor nao eh numero

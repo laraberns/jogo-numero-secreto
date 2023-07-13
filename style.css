@@ -5,6 +5,7 @@
     --font-family:'Libre Franklin', sans-serif;
     --cor-primaria:#FFFFFF;
     --bg-color: #412234;
+    --game-over-color: #EC3232;
 }
 
 body{
@@ -58,4 +59,10 @@ h2{
     font-family: var(--font-family);
     color: var(--bg-color);
     font-size: 1em;
+}
+
+p{
+    font-size: 1em;
+    margin-top: 0.5em;
+    color: var(--game-over-color);
 }
